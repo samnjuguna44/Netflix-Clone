@@ -9,7 +9,8 @@ const SavedShows = () => {
     const [movies, setMovies] = useState([])
     const {user} = UserAuth()
 
-
+ 
+    //function controlling the slide left and right arrows on the rows
     const slideLeft = () => {
         var slider = document.getElementById('slider');
         slider.scrollLeft = slider.scrollLeft - 500;
@@ -69,4 +70,4 @@ const SavedShows = () => {
   )
 }
 
-export default SavedShows
+export default SavedShows;

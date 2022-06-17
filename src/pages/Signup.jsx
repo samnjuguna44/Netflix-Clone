@@ -8,6 +8,7 @@ const Signup = () => {
     const {user, signUp} = UserAuth();
     const navigate = useNavigate()
 
+    //signup function that captures email and password
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {

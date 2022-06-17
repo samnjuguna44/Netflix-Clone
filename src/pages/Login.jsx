@@ -9,6 +9,8 @@ const Login = () => {
   const {user, logIn} = UserAuth();
   const navigate = useNavigate()
 
+
+  //existing user log in function
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('')

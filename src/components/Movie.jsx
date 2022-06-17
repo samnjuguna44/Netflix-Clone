@@ -12,6 +12,7 @@ const Movie = ({item}) => {
 
   const movieID = doc(db, 'users', `${user?.email}`)
 
+  //function to save movie once heart symbol is clicked on
   const saveShow = async () => {
     if(user?.email) {
       setLike(!like)
