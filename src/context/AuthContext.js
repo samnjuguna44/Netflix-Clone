@@ -16,6 +16,7 @@ export function AuthContextProvider({children}) {
     //sign up function
     function signUp(email, password) {
         createUserWithEmailAndPassword(auth, email, password);
+        //each time user is signed up a database is created in firestore with username, email and an array for saved shows
         setDoc(doc(db, 'users', email), {
             savedShows: []
         })
